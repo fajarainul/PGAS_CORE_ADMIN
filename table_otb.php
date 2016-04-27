@@ -125,7 +125,7 @@
                         }else{
                           echo '<div class="col-md-12 mt">';
            
-                            echo '<div class="alert alert-danger"><b>Gagal!</b> Data OTB gagal diubah. Pastikan data telah tidak kosong.</div>';
+                            echo '<div class="alert alert-danger"><b>Gagal!</b> Data LINK gagal diubah. Pastikan semua form telah terisi.</div>';
                               
                           echo '</div>';
                         }
@@ -220,7 +220,7 @@
                     ?>
                     <div class="col-md-12 mt">
                       <div class="content-panel" style="padding:20px;">
-                            <table class="table table-hover" id="table" style="padding:20px;">
+                            <table class="table table-hover" id="table2" style="padding:20px;">
                             <h4><i class="fa fa-angle-right"></i> <?php echo $text2;?></h4>
                             <hr>
                                 <thead>
@@ -355,6 +355,9 @@
 
       $(document).ready( function () {
           $('#table').DataTable();
+      });
+      $(document).ready( function () {
+          $('#table2').DataTable();
       });
 
       //triggered when modal is about to be shown
