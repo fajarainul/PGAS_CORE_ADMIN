@@ -42,22 +42,23 @@
       <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
+       <!--header start-->
       <header class="header black-bg">
-              <div class="sidebar-toggle-box">
+              <!-- <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-              </div>
+              </div> -->
+
             <!--logo start-->
-            <a href="index.php" class="logo"><b>PGAS CORE</b></a>
+            <a href="#" class="logo"><img src="assets/img/pgas.png" style="max-height:40px;width:auto;"></img></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
-               
+                <p style="font-size:16px; margin-left:-80px; color:white">Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</p>
             </div>
-            <div class="top-menu">
-            	<ul class="nav pull-right top-menu">
+            <!-- <div class="top-menu">
+              <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout.php">Logout</a></li>
-            	</ul>
-            </div>
+              </ul>
+            </div> -->
         </header>
       <!--header end-->
       
@@ -70,9 +71,14 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"><?php echo $_SESSION['name'];?></h5>
-
+                 <!--  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+                  <h5 class="centered"><?php echo $_SESSION['name'];?></h5> -->
+                  <li class="mt">
+                      <a href="index.php">
+                          <i class="fa fa-home"></i>
+                          <span>Home</span>
+                      </a>
+                  </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
@@ -97,7 +103,13 @@
                           <li><a  href="table_otb.php?type_otb=SBWI">OTB SERPONG</a></li>
                           <li><a  href="table_otb.php?type_otb=DBWI">OTB DUREN</a></li>
                       </ul>
-                  </li>    
+                  </li> 
+                  <li>
+                      <a href="logout.php">
+                          <i class="fa fa-sign-out"></i>
+                          <span>Logout</span>
+                      </a>
+                  </li>     
 
               </ul>
               <!-- sidebar menu end-->
