@@ -42,22 +42,23 @@
       <!-- **********************************************************************************************************************************************************
       TOP BAR CONTENT & NOTIFICATIONS
       *********************************************************************************************************************************************************** -->
-      <!--header start-->
-      <header class="header black-bg">
-              <div class="sidebar-toggle-box">
+       <!--header start-->
+        <header class="header black-bg">
+              <!-- <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-              </div>
+              </div> -->
+
             <!--logo start-->
-            <a href="index.php" class="logo"><b>PGAS CORE</b></a>
+            <a href="#" class="logo"><img src="assets/img/pgas.png" style="max-height:40px;width:auto;"></img></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
-               
+                <p style="font-size:16px; margin-left:-80px; color:white">Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</p>
             </div>
-            <div class="top-menu">
-            	<ul class="nav pull-right top-menu">
+            <!-- <div class="top-menu">
+              <ul class="nav pull-right top-menu">
                     <li><a class="logout" href="logout.php">Logout</a></li>
-            	</ul>
-            </div>
+              </ul>
+            </div> -->
         </header>
       <!--header end-->
       
@@ -70,9 +71,14 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
               
-              	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered"><?php echo $_SESSION['name'];?></h5>
-
+                 <!--  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+                  <h5 class="centered"><?php echo $_SESSION['name'];?></h5> -->
+                  <li class="mt">
+                      <a href="index.php">
+                          <i class="fa fa-home"></i>
+                          <span>Home</span>
+                      </a>
+                  </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
@@ -97,6 +103,12 @@
                           <li><a  href="table_otb.php?type_otb=SBWI">OTB SERPONG</a></li>
                           <li><a  href="table_otb.php?type_otb=DBWI">OTB DUREN</a></li>
                       </ul>
+                  </li> 
+                  <li>
+                      <a href="logout.php">
+                          <i class="fa fa-sign-out"></i>
+                          <span>Logout</span>
+                      </a>
                   </li>     
 
               </ul>
@@ -195,6 +207,7 @@
                                       echo '<td>'.$row['destination'].'</td>';
                                       echo '<td>';                                      
                                         echo '<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" data-id_inf_core="'.$row['id_inf_core'].'" data-type_link="'.$type_link.'" data-closure_name="'.$closure_name.'" data-tx="'.$row['tx'].'" data-rx="'.$row['rx'].'" data-destination="'.$row['destination'].'"><i class="fa fa-pencil"></i></button>';
+                                        echo '<a href="delete_informasi_core.php?id_inf_core='.$row['id_inf_core'].'&type_link='.$type_link.'&closure_name='.$closure_name.'" onClick="return confirmDelete()" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></a>';
                                       echo '</td>';
                                     echo '</tr>';
                                   }
