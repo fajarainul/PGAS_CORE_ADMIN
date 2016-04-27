@@ -330,6 +330,10 @@
             form.action ="edit_table_informasi_core.php?id_inf_core="+id_inf_core+"&type_link="+type_link+"&closure_name="+closure_name;
           
         });
+
+        function confirmDelete(){
+          return confirm('Anda yakin akan menghapus data ini?');
+        }
   </script>
 
   </body>
