@@ -34,6 +34,7 @@
     if(!$valid){
     	session_start();
     	$_SESSION['success'] = false;
+        $_SESSION['message'] = '<b>Gagal!</b> Data Informasi Core gagal diubah. Pastikan semua form telah terisi.';
     	header("Location:table_informasi_core.php?type_link=$type_link&closure_name=$closure_name");
     }else{
     	//connect to database
@@ -55,6 +56,7 @@
 	    }else{
 	    	session_start();
 	    	$_SESSION['success'] = true;
+            $_SESSION['message'] = '<b>Sukses!</b> Data Informasi Core berhasil diubah.';
 	    	header("Location:table_informasi_core.php?type_link=$type_link&closure_name=$closure_name");
 	    }
 

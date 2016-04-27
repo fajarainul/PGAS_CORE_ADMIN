@@ -118,14 +118,14 @@
                         if($_SESSION['success']){
                           echo '<div class="col-md-12 mt">';
            
-                            echo '<div class="alert alert-success"><b>Sukses!</b> Data Informasi Core berhasil diubah.</div>';
+                            echo '<div class="alert alert-success">'.$_SESSION['message'].'</div>';
                               
                           echo '</div>';
 
                         }else{
                           echo '<div class="col-md-12 mt">';
            
-                            echo '<div class="alert alert-danger"><b>Gagal!</b> Data Informasi Core gagal diubah. Pastikan data telah tidak kosong.</div>';
+                            echo '<div class="alert alert-danger">'.$_SESSION['message'].'</div>';
                               
                           echo '</div>';
                         }
@@ -157,7 +157,10 @@
                                     }
                                   }
                               ?>
-                            <h4><i class="fa fa-angle-right"></i> <?php echo $text."  => ".$closure_name;?></h4>
+                              <?php
+                                $link = 'form_add_informasi_core.php?type_link='.$type_link.'&closure_name='.$closure_name;
+                              ?>
+                            <h4><i class="fa fa-angle-right"></i> <?php echo $text."  => ".$closure_name;?><a href="<?php echo $link?>" class="btn btn-primary pull-right">Add Data Informasi Core</a></h4>
 	                  	  	  <hr>
 	                              <thead>
 	                              <tr>

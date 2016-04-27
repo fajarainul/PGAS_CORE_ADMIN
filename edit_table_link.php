@@ -33,6 +33,7 @@
     if(!$valid){
     	session_start();
     	$_SESSION['success'] = false;
+        $_SESSION['message'] = '<b>Gagal!</b> Data LINK gagal diubah. Pastikan semua form telah terisi.';
     	header("Location:table_link.php?type_link=$type_link");
     }else{
     	//connect to database
@@ -54,6 +55,7 @@
 	    }else{
 	    	session_start();
 	    	$_SESSION['success'] = true;
+            $_SESSION['message'] = '<b>Sukses!</b> Data LINK berhasil diubah.';
 	    	header("Location:table_link.php?type_link=$type_link");
 	    }
 
