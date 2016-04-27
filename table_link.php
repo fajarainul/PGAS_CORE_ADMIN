@@ -193,7 +193,7 @@
                                   }
 
                                   //query
-                                  $query = mysqli_query($conn, "SELECT closure_name, latitude,longitude,id_link, jarak FROM tb_link WHERE type_link='$type_link'");
+                                  $query = mysqli_query($conn, "SELECT closure_name, latitude,longitude,id_link, jarak FROM tb_link WHERE type_link='$type_link' ORDER BY id_link DESC");
                                   if (!$query) {
                                       die("QUERY failed: " . mysqli_error($conn));
                                   }
@@ -207,6 +207,7 @@
                                       echo '<td>';
                                         echo '<a href="table_informasi_core.php?type_link='.$type_link.'&closure_name='.$row['closure_name'].'" class="btn btn-success btn-xs" ><i class="fa fa-eye"></i></a>';
                                         echo '<button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" data-type_link="'.$type_link.'" data-id_link="'.$row['id_link'].'" data-longitude="'.$row['longitude'].'" data-latitude="'.$row['latitude'].'" data-jarak="'.$row['jarak'].'"><i class="fa fa-pencil"></i></button>';
+                                        echo '<a href="delete_link.php?id_link='.$row['id_link'].'&type_link='.$type_link.'&closure_name='.$row['closure_name'].'" onClick="return confirmDelete()" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></a>';
                                       echo '</td>';
                                     echo '</tr>';
                                   }
@@ -324,6 +325,10 @@
             $(".modal-body #form_jarak").val( jarak );
           
         });
+
+        function confirmDelete(){
+          return confirm('Anda yakin akan menghapus data ini?');
+        }
   </script>
 
   </body>
