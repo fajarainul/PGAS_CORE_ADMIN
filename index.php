@@ -49,7 +49,7 @@
             <a href="#" class="logo"><img src="assets/img/pgas.png" style="max-height:40px;width:auto;"></img></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
-                <p style="font-size:16px; margin-left:-80px; color:white">Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</p>
+                <p style="font-size:16px; margin-left:-80px; color:#424a5d"><b>Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</b></p>
             </div>
             <!-- <div class="top-menu">
               <ul class="nav pull-right top-menu">
@@ -121,22 +121,34 @@
       <section id="main-content">
           <section class="wrapper">
           	<h3><i class="fa fa-angle-right"></i> BERANDA</h3>
-				<div class="row">                  
-	                  <div class="col-md-12 mt">
-	                  	<div class="jumbotron">
-                        <h1>Selamat Datang di PGAS CORE</h1>
-                        <p>PGAS CORE adalah aplikasi yang digunakan 
-                          oleh engineer PGA COM untuk memudahkan 
-                          engineer dalaman mendapatkan informasi core dari 
-                          OTB serta pemetaan closure yang digunakan sebagai 
-                          media informasi ketika terjadi FO cut</p>
-                      </div>
-	                  </div><!-- /col-md-12 -->
-				</div><!-- row -->
+    				<div class="row">                  
+              <div class="col-md-12 mt">
+                <div class="content-panel">
+                  <div class="jumbotron" style="background:white">
+                  <img src="assets/img/pgas.png"/>
+                	
+                    <h1>Selamat Datang di PGAS CORE</h1>
+                    <p>PGAS CORE adalah aplikasi yang digunakan 
+                      oleh engineer PGA COM untuk memudahkan 
+                      engineer dalaman mendapatkan informasi core dari 
+                      OTB serta pemetaan closure yang digunakan sebagai 
+                      media informasi ketika terjadi FO cut</p>
+                  </div>
+              </div>
+              </div><!-- /col-md-12 -->
+    				</div><!-- row -->
 		</section><! --/wrapper -->
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              <p style="color:#424a5d">&copy Putranto Jum Prasetyo & Fajrin Meidya</p>
+             
+          </div>
+      </footer>
+      <!--footer end-->
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->

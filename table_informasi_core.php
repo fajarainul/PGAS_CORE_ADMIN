@@ -52,7 +52,7 @@
             <a href="#" class="logo"><img src="assets/img/pgas.png" style="max-height:40px;width:auto;"></img></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
-                <p style="font-size:16px; margin-left:-80px; color:white">Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</p>
+                <p style="font-size:16px; margin-left:-80px; color:#424a5d"><b>Sistem Pemetaan Joint Closure dan Management Core<br>PT PGAS Telekomunikasi Nusantara</b></p>
             </div>
             <!-- <div class="top-menu">
               <ul class="nav pull-right top-menu">
@@ -271,7 +271,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              PGAS CORE
+              <p style="color:#424a5d">&copy Putranto Jum Prasetyo & Fajrin Meidya</p>
              
           </div>
       </footer>
